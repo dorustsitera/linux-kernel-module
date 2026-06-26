@@ -1,7 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  (c) Author: D'Orus Tsitera
+ * lkm_template - Loadable Kernel Module template
+ *
+ * A minimal LKM skeleton: init/exit hooks, pr_fmt, module metadata.
+ * Intended as a starting point for out-of-tree kernel module development.
+ *
+ * Author:  D'Orus Tsitera
+ * Date:    2026-06
+ * Version: 0.1
+ *
+ * Tested on: Linux 6.1.175 x86_64
  */
+
 #define pr_fmt(fmt) "%s:%s(): " fmt, KBUILD_MODNAME, __func__
 
 #include <linux/init.h>
